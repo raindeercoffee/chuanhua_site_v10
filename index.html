@@ -323,16 +323,18 @@ footer .back-garden:hover{color:var(--pink-deep)}
 #studio .course{border-color:#E1DAF0;box-shadow:0 12px 36px rgba(120,110,170,.14);display:flex;flex-direction:column}
 #studio .course .pains{flex:1}
 #studio .st-note{text-align:center;margin-top:38px;font-size:13px;color:#8A6470}
-/* 第三種卡色：晨光金（第一次免費諮詢） */
+/* 第三種卡色：晨光金（在見面之前・行銷諮詢） */
 .course.c-gold::after{background:var(--gold)}
 .c-gold .course-icon{background:linear-gradient(135deg,#FDF6EA,#F7E6CB)}
 .c-gold .pains li::before{color:var(--gold-deep)}
 .c-gold .btn{background:linear-gradient(135deg,var(--gold),var(--gold-deep));color:#fff;box-shadow:0 8px 20px rgba(217,154,99,.35)}
+/* 「填寫體質報告表單」按鈕：粉藍暈染(只此顆) */
+#csOpen{background:linear-gradient(135deg,#E0B3D6,#B6A5DE,#8FB4E6);box-shadow:0 8px 20px rgba(150,140,205,.35)}
 .price-line{font-family:var(--serif);font-size:26px;color:#6D3F50;margin-bottom:18px}
 .price-line small{font-family:var(--sans);font-size:13px;color:#8A6470;margin-left:4px;font-weight:400}
 @media (max-width:1080px){#studio .course-grid{grid-template-columns:1fr;max-width:520px;margin-left:auto;margin-right:auto}}
 
-/* 第一次免費諮詢・互動預約卡 */
+/* 在見面之前・行銷諮詢・互動預約卡 */
 #consult{position:fixed;inset:0;z-index:1300;overflow-y:auto;visibility:hidden;opacity:0;transition:opacity .6s ease,visibility .6s;background:linear-gradient(180deg,#FDF6F1 0%,#FBEDEF 45%,#F3E4EC 100%)}
 #consult.open{visibility:visible;opacity:1}
 .cs-wrap{max-width:640px;margin:0 auto;padding:46px 20px 70px;min-height:100%;display:flex;flex-direction:column;justify-content:center}
@@ -758,7 +760,7 @@ footer .back-garden:hover{color:var(--pink-deep)}
     </div>
   </section>
 
-  <!-- 第一次免費諮詢・互動預約卡 -->
+  <!-- 在見面之前・行銷諮詢・互動預約卡 -->
   <div id="consult" role="dialog" aria-modal="true" aria-labelledby="csTitle" aria-hidden="true">
     <div class="cs-wrap">
       <div class="cs-card">
@@ -1292,7 +1294,7 @@ if(!reduced){
 })();
 </script>
 
-<!-- 第一次免費諮詢・互動預約卡：Firebase + Google 試算表 -->
+<!-- 在見面之前・行銷諮詢・互動預約卡：Firebase + Google 試算表 -->
 <script type="module">
 const firebaseConfig = {
   apiKey:            "AIzaSyDm38xIAhr21bdccmcatjZOwViQ5LRxWOc",
